@@ -1,0 +1,6 @@
+html[dir='rtl'] {
+    body {
+        // text-align: left;
+        direction: $ar-dir;
+    }
+}

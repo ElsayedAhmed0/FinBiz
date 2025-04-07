@@ -1,0 +1,874 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Black.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Black.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Black.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Bold.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Bold.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Bold.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Heavy.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Heavy.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Heavy.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Light.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Light.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Medium.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Medium.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Medium.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Regular.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Regular.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("../../fonts/DINNextLTArabic-Regular.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic Ultra";
+  src: url("../../fonts/DINNextLTArabic-UltraLight.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic Ultra";
+  src: url("../../fonts/DINNextLTArabic-UltraLight.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic Ultra";
+  src: url("../../fonts/DINNextLTArabic-UltraLight.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic Ultra";
+  src: url("../../fonts/DINNextLTArabic-UltraLight.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Next LT Arabic Ultra";
+  src: url("../../fonts/DINNextLTArabic-UltraLight.woff2") format("woff2"), url("../../fonts/DINNextLTArabic-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+  This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+  calculation of the height of the owl-item that breaks page layouts
+  */
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-item .owl-lazy[src^=""],
+.owl-carousel .owl-item .owl-lazy:not([src]) {
+  max-height: 0;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
+
+.w-5- {
+  width: 5px;
+}
+
+.w-10- {
+  width: 10px;
+}
+
+.w-15- {
+  width: 15px;
+}
+
+.w-20- {
+  width: 20px;
+}
+
+.w-25- {
+  width: 25px;
+}
+
+.w-30- {
+  width: 30px;
+}
+
+.w-35- {
+  width: 35px;
+}
+
+.w-40- {
+  width: 40px;
+}
+
+.w-45- {
+  width: 45px;
+}
+
+.w-50- {
+  width: 50px;
+}
+
+.w-55- {
+  width: 55px;
+}
+
+.w-60- {
+  width: 60px;
+}
+
+.w-65- {
+  width: 65px;
+}
+
+.w-70- {
+  width: 70px;
+}
+
+.w-75- {
+  width: 75px;
+}
+
+.w-80- {
+  width: 80px;
+}
+
+.w-85- {
+  width: 85px;
+}
+
+.w-90- {
+  width: 90px;
+}
+
+.w-95- {
+  width: 95px;
+}
+
+.w-100- {
+  width: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ol,
+ul,
+h1,
+h2,
+h3,
+h5,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.pxt {
+  margin-top: 50px;
+}
+
+.pxl {
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  display: block;
+  font-family: "DIN Next LT Arabic Ultra";
+  text-align: start;
+}
+
+:focus-visible,
+.form-control:focus,
+button:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.nave-responsive {
+  display: none;
+}
+
+.ng-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+button.primary_1 {
+  border-radius: 30px;
+  padding: 15px 10px;
+  border: unset;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+button.btn_get_start {
+  border: 1px solid #3B3B3B;
+  background: #F6F6F6;
+  padding: 10px 30px;
+  border-bottom: 0;
+  color: #1D1C20;
+  font-weight: 500;
+}
+button.text_mail {
+  background: #1D1C20;
+  width: 30%;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+button.btn_translat {
+  background: #1D1C20;
+  border-radius: 8px;
+  padding: 5px;
+  color: #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+button.btn-font-12 {
+  font-size: 12px;
+}
+button.btn-font-14 {
+  font-size: 14px;
+}
+button.btn-font-16 {
+  font-size: 16px;
+}
+button.btn-font-18 {
+  font-size: 18px;
+}
+button.btn-font-20 {
+  font-size: 20px;
+}
+button.btn-font-22 {
+  font-size: 22px;
+}
+button.btn-font-24 {
+  font-size: 24px;
+}
+
+header {
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  padding: 25px 0;
+  top: 0;
+  z-index: 99;
+  height: 95px;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .header .logo {
+  width: 85px;
+  height: 20px;
+}
+header .header .nav_bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+header .header .nav_bar ul li {
+  padding: 0 15px;
+}
+header .header .nav_bar ul li a,
+header .header .nav_bar ul li button {
+  color: #1D1C20;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.home_page {
+  background: #F6F6F6;
+  margin-top: 95px;
+}
+
+.introducing_sec {
+  text-align: center;
+  padding: 70px 0;
+}
+.introducing_sec .btn_introducing button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 1px solid #364C09;
+  padding: 3px 10px;
+  border-radius: 30px;
+  background: #ffffff;
+  border-bottom: unset;
+}
+.introducing_sec .btn_introducing button span {
+  background: #A3DC2F;
+  padding: 6px 20px;
+  border-radius: 60px;
+  margin: 0 5px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.introducing_sec .btn_introducing button h6 {
+  margin: 0;
+  padding: 0 20px;
+  color: #1D1C20;
+  font-size: 14px;
+}
+.introducing_sec .btn_introducing button img {
+  width: 16px;
+  height: 16px;
+}
+.introducing_sec .btn_introducing h3 {
+  font-size: 50px;
+  font-weight: 700;
+  width: 60%;
+  margin: 10px auto;
+}
+.introducing_sec .btn_introducing p {
+  color: #828282;
+  font-size: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.mail_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 10px auto;
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 3px;
+}
+.mail_text input {
+  width: 70%;
+  color: #7C7C7C;
+  font-size: 18px;
+  border: unset;
+  padding-inline-start: 25px;
+}
+
+.reviews_sec {
+  width: 60%;
+  margin: 60px auto 0 auto;
+}
+.reviews_sec .img_reviewer {
+  position: relative;
+}
+.reviews_sec .img_reviewer img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+  margin-left: -10px;
+}
+.reviews_sec span {
+  color: #828282;
+  padding-top: 20px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bashborad-card {
+  background: #F2F2F2;
+  padding: 20px 25px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1411764706);
+}
+.bashborad-card .col:nth-child(1) .db-card .card_head span {
+  color: #72A700;
+}
+.bashborad-card .col:nth-child(2) .db-card .card_head span {
+  color: #EE1F1F;
+}
+.bashborad-card .col:nth-child(3) .db-card .card_head span {
+  color: #003FDB;
+}
+
+.db-card {
+  background: #fff;
+  border: 1px solid #E0E0E0 !important;
+  padding: 15px;
+  border-radius: 20px !important;
+}
+.db-card.vr-card .card_head {
+  padding: 5px 0;
+}
+.db-card.vr-card .price_graph span {
+  font-size: 28px;
+}
+.db-card.vr-card hr {
+  margin: 20px 0;
+  color: #c1c1c1;
+}
+.db-card .card_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 15px 0;
+}
+.db-card .card_head h6 {
+  color: #4F4F4F;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.db-card .card_head span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.db-card .price_graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 10px 0;
+}
+.db-card .price_graph span {
+  color: #1D1C20;
+  font-size: 36px;
+  font-weight: 500;
+}
+.db-card .price_graph img {
+  width: 62px;
+  height: 38px;
+}
+
+html[dir=rtl] body {
+  direction: rtl;
+}/*# sourceMappingURL=style.css.map */

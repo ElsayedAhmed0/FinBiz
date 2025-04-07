@@ -1,0 +1,406 @@
+// start var
+$black-color:#000;
+$white-color:#ffffff;
+$text-color:#1D1C20;
+$sm-text-color:#383838;
+$main-background-color:#F6F6F6;
+$main-fontSize-10:10px;
+$main-fontSize-12:12px;
+$main-fontSize-14:14px;
+$main-fontSize-16:16px;
+$main-fontSize-18:18px;
+$main-fontSize-20:20px;
+$main-fontSize-22:22px;
+$main-fontSize-24:24px;
+$main-fontSize-28:28px;
+$main-fontSize-30:30px;
+$main-fontSize-36:36px;
+$main-fontSize-38:38px;
+// end var
+$start-dir:right;
+$end-dir:left;
+$ar-dir:rtl;
+$en-dir:ltr;
+// ************************
+@mixin flex-bar-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-bar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-bar-start {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+@mixin flex-bar-end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@mixin img-property {
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+@for $i from 1 through 20 {
+    .w-#{$i *5}- {
+        width: $i *5px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    // font-family: $font-main;
+}
+
+p {
+    margin: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-start {
+    text-align: start !important;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ol,
+ul,
+h1,
+h2,
+h3,
+h5,
+h4,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.pxt {
+    margin-top: 50px;
+}
+
+.pxl {
+    margin-top: 150px;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+    font-family: 'DIN Next LT Arabic Ultra';
+    text-align: start;
+}
+
+:focus-visible,
+.form-control:focus,
+button:focus {
+    outline: none;
+    box-shadow: unset;
+}
+
+.nave-responsive {
+    display: none;
+}
+
+.ng-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// ********* btn style ***************
+button {
+    &.primary_1 {
+        border-radius: 30px;
+        padding: 15px 10px;
+        border: unset;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    &.btn_get_start {
+        border: 1px solid #3B3B3B;
+        background: $main-background-color;
+        padding: 10px 30px;
+        border-bottom: 0;
+        color: $text-color;
+        font-weight: 500;
+    }
+    &.text_mail {
+        background: $text-color;
+        // border: unset;
+        width: 30%;
+        padding: 10px;
+        color: $white-color;
+        font-weight: 600;
+    }
+    &.btn_translat {
+        background: $text-color;
+        border-radius: 8px;
+        padding: 5px;
+        color: $white-color;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+    &.btn-font-12 {
+        font-size: $main-fontSize-12;
+    }
+    &.btn-font-14 {
+        font-size: $main-fontSize-14;
+    }
+    &.btn-font-16 {
+        font-size: $main-fontSize-16;
+    }
+    &.btn-font-18 {
+        font-size: $main-fontSize-18;
+    }
+    &.btn-font-20 {
+        font-size: $main-fontSize-20;
+    }
+    &.btn-font-22 {
+        font-size: $main-fontSize-22;
+    }
+    &.btn-font-24 {
+        font-size: $main-fontSize-24;
+    }
+}
+
+// ******************************************************************************************************
+header {
+    background: $white-color;
+    width: 100%;
+    position: fixed;
+    padding: 25px 0;
+    top: 0;
+    z-index: 99;
+    height: 95px;
+    .header {
+        @include flex-bar-between;
+        width: 100%;
+        .logo {
+            width: 85px;
+            height: 20px;
+        }
+        .nav_bar {
+            ul {
+                @include flex-bar-center;
+                margin: 0;
+                padding: 0;
+                li {
+                    padding: 0 15px;
+                    a,
+                    button {
+                        color: $text-color;
+                        font-size: $main-fontSize-18;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ************* end header ********
+.home_page {
+    background: $main-background-color;
+    margin-top: 95px;
+}
+
+.introducing_sec {
+    text-align: center;
+    padding: 70px 0;
+    .btn_introducing {
+        button {
+            @include flex-bar-center;
+            margin: 20px auto;
+            border: 1px solid #364C09;
+            padding: 3px 10px;
+            border-radius: 30px;
+            background: $white-color;
+            border-bottom: unset;
+            span {
+                background: #A3DC2F;
+                padding: 6px 20px;
+                border-radius: 60px;
+                margin: 0 5px;
+                font-size: $main-fontSize-20;
+                color: $white-color;
+            }
+            h6 {
+                margin: 0;
+                padding: 0 20px;
+                color: $text-color;
+                font-size: $main-fontSize-14;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        h3 {
+            font-size: 50px;
+            font-weight: 700;
+            width: 60%;
+            margin: 10px auto;
+        }
+        p {
+            color: #828282;
+            font-size: $main-fontSize-20;
+            width: 60%;
+            margin: 20px auto;
+        }
+    }
+}
+
+.mail_text {
+    @include flex-bar-between;
+    width: 40%;
+    margin: 10px auto;
+    background: $white-color;
+    border-radius: 30px;
+    padding: 3px;
+    input {
+        width: 70%;
+        color: #7C7C7C;
+        font-size: $main-fontSize-18;
+        border: unset;
+        padding-inline-start: 25px;
+    }
+}
+
+.reviews_sec {
+    width: 60%;
+    margin: 60px auto 0 auto;
+    .img_reviewer {
+        position: relative;
+        img {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            overflow: hidden;
+            margin-left: -10px;
+        }
+    }
+    span {
+        color: #828282;
+        padding-top: 20px;
+        display: block;
+        font-size: $main-fontSize-14;
+        font-weight: 600;
+    }
+}
+
+// ***************** dashboard style *********
+.bashborad-card {
+    background: #F2F2F2;
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px #00000024;
+    .col {
+        &:nth-child(1) {
+            .db-card .card_head span {
+                color: #72A700;
+            }
+        }
+        &:nth-child(2) {
+            .db-card .card_head span {
+                color: #EE1F1F;
+            }
+        }
+        &:nth-child(3) {
+            .db-card .card_head span {
+                color: #003FDB;
+            }
+        }
+    }
+}
+
+.db-card {
+    background: #fff;
+    border: 1px solid #E0E0E0 !important;
+    padding: 15px;
+    border-radius: 20px !important;
+    &.vr-card {
+        .card_head {
+            padding: 5px 0;
+        }
+        .price_graph {
+            span {
+                font-size: $main-fontSize-28;
+            }
+        }
+        hr {
+            margin: 20px 0;
+            color: #c1c1c1;
+        }
+    }
+    .card_head {
+        @include flex-bar-between;
+        padding: 10px 0 15px 0;
+        h6 {
+            color: #4F4F4F;
+            margin: 0;
+            font-size: $main-fontSize-18;
+            font-weight: 400;
+        }
+        span {
+            font-size: $main-fontSize-14;
+            font-weight: 700;
+        }
+    }
+    .price_graph {
+        @include flex-bar-between;
+        padding: 5px 0 10px 0;
+        span {
+            color: $text-color;
+            font-size: $main-fontSize-36;
+            font-weight: 500;
+        }
+        img {
+            width: 62px;
+            height: 38px;
+        }
+    }
+}
