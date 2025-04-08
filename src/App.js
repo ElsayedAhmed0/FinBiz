@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./component/Header";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Card } from "react-bootstrap";
 function App() {
   return (

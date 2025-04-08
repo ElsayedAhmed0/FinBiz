@@ -55,6 +55,23 @@ $en-dir:ltr;
     min-width: 100%;
 }
 
+@mixin title-btn {
+    width: max-content;
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid #364C09;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: $white-color;
+}
+
+@mixin title-btn-text {
+    color: $text-color;
+    font-size: $main-fontSize-14;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
 @for $i from 1 through 20 {
     .w-#{$i *5}- {
         width: $i *5px;
@@ -401,6 +418,74 @@ header {
         img {
             width: 62px;
             height: 38px;
+        }
+    }
+}
+
+// ******************* testimonials_sec
+.testimonials_sec {
+    text-align: center;
+    padding: 70px 0;
+    .title_sec {
+        @include title-btn;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+        span {
+            @include title-btn-text;
+        }
+    }
+    h3 {
+        color: $text-color;
+        font-size: 50px;
+        padding: 20px 0;
+        font-weight: 700;
+    }
+    p {
+        color: #333333;
+        font-size: $main-fontSize-18;
+        line-height: 33px;
+        padding: 20px 0;
+    }
+    .swiper_sec {
+        margin-top: 70px;
+        .card_swiper {
+            background: $white-color;
+            border-radius: 20px;
+            padding: 25px;
+            h6 {
+                text-align: start;
+                font-size: $main-fontSize-20;
+                color: $text-color;
+            }
+            .details_card {
+                @include flex-bar-between;
+                .card_rate {
+                    @include flex-bar-start;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        padding: 5px;
+                    }
+                    .arte_star {
+                        padding-inline-start: 5px;
+                        svg {
+                            color: #FFC250;
+                            width: 14px;
+                        }
+                    }
+                }
+                .img_invert {
+                    width: 67px;
+                    height: 48px;
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.2 !important;
+                    }
+                }
+            }
         }
     }
 }
