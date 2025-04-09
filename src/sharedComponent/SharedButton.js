@@ -8,6 +8,7 @@ const SharedButton = ({ label, variant = "primary", size = "fnt_16",basebtnstyle
     btnstart: "btn_get_start",
     mail_btn: "text_mail",
     trans_btn: "btn_translat",
+    demo_btn:"btn_demo",
   };
   const sizeStyles = {
    fnt_12:"btn-font-12",

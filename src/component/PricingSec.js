@@ -7,19 +7,21 @@ const PricingSec = () => {
       title: "Basic",
       description:
         "Get a professional website designed according to your needs.",
-      price: "$499/month",
+      price: "$499",
       features: [
         "Get a fully designed Website.",
         "Webflow Development",
         "Limited Support",
       ],
       label: "Get started",
+      actionBtn:"basic",
+      stylett:"text"
     },
     {
       title: "Pro",
       description:
         "Get a professional website designed according to your needs.",
-      price: "$699/month",
+      price: "$699",
       features: [
         "Get a fully designed Website.",
         "Webflow Development",
@@ -29,23 +31,27 @@ const PricingSec = () => {
       ],
       label: "Get started",
       distinct: "Popular",
-      
+      actionBtn:"pro",
+      stylett:"texttt"
     },
     {
       title: "Enterprise",
       description:
         "Get a professional website designed according to your needs.",
-      price: "$999/month",
+      price: "$999",
       features: [
         "Get a fully designed Website.",
         "Webflow Development",
         "Limited Support",
         "Standart integrations",
       ],
-      label: "Get started",
+      label: "Contact Us",
+      actionBtn:"interprice",
+      stylett:"texts"
     },
   ];
   return (
+    <div className="container">
     <div className="testimonials_sec">
       <div className="title_sec">
         <img src="img/Pricing.svg" alt="" />
@@ -58,17 +64,20 @@ const PricingSec = () => {
         streamline your finances and reach your business goals.
       </p>
       
-      <Row className="mt-2 mb-3">
+      <Row className="mt-2 mb-3 PricingCard_sec">
         { PriceCardDAta.map((item,index)=>{
             return (
-              <Col><PricingCard title={item.title} description={item.description} price={item.price} features={item.features} label={item.label} distinct={item.distinct}  key={index} /></Col>
+              <Col> <PricingCard key={index} {...item} /></Col>
+          
             )
         })
          
         }
       </Row>
     </div>
+    </div>
   );
 };
 
 export default PricingSec;
+{/* <PricingCard title={item.title} description={item.description} price={item.price} features={item.features} label={item.label} distinct={item.distinct} actionBtn={item.actionBtn}  key={index} /> */}

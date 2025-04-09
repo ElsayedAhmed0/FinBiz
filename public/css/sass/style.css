@@ -641,7 +641,8 @@ button.btn_get_start {
 }
 button.text_mail {
   background: #1D1C20;
-  width: 30%;
+  width: -moz-max-content;
+  width: max-content;
   padding: 10px;
   color: #ffffff;
   font-weight: 600;
@@ -655,6 +656,14 @@ button.btn_translat {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+button.btn_demo {
+  background: #A3DC2F;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 600;
 }
 button.btn-font-12 {
   font-size: 12px;
@@ -715,7 +724,7 @@ header .header .nav_bar ul li button {
 }
 
 .home_page {
-  background: #F6F6F6;
+  background: #F2F2F2;
   margin-top: 95px;
 }
 
@@ -948,6 +957,224 @@ header .header .nav_bar ul li button {
   width: 100%;
   height: 100%;
   opacity: 0.2 !important;
+}
+.testimonials_sec .arrow_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.testimonials_sec .arrow_btns .custom-arrow {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.testimonials_sec .arrow_btns .custom-arrow:hover {
+  transition: 0.3s ease-in-out;
+  background: #A3DC2F;
+}
+.testimonials_sec .PricingCard_sec {
+  padding: 0 100px;
+}
+
+.testimonials_sec .col:nth-child(2) .card_price .pr_card__title h3 {
+  color: #729F19;
+}
+
+.card_price {
+  border: 1px solid #BDBDBD;
+  border-radius: 12px;
+  padding: 25px;
+  height: 700px;
+  position: relative;
+}
+.card_price .sub_text {
+  position: absolute;
+  right: 40px;
+  border: 1px solid #236456;
+  padding: 3px 12px;
+  border-radius: 30px;
+  color: #33C6AB;
+  background: #112220;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card_price .pr_card__title h3 {
+  color: #1D1C20;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.card_price .pr_card_description span {
+  color: #333333;
+  font-size: 16px;
+  padding-bottom: 20px;
+  display: block;
+}
+.card_price .pr_card_price {
+  margin: 50px 0;
+}
+.card_price .pr_card_price span {
+  color: #1D1C20;
+  font-size: 36px;
+  font-weight: 500;
+}
+.card_price .pr_card_price span em {
+  color: #4F4F4F;
+  font-size: 16px;
+}
+.card_price .pr_card_feature {
+  text-align: start;
+  margin: 20px 0;
+}
+.card_price .pr_card_feature ul {
+  padding: 0;
+  margin: 0;
+}
+.card_price .pr_card_feature ul li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1D1C20;
+  padding-bottom: 5px;
+}
+.card_price .pr_card_btn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+}
+
+.next_sec {
+  background: #F6F6F6;
+  padding-bottom: 30px;
+}
+
+.upgrade_card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.upgrade_sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.upgrade_sec .upgrade_description {
+  width: 60%;
+}
+.upgrade_sec .upgrade_description h2 {
+  color: #1D1C20;
+  font-size: 70px;
+}
+.upgrade_sec .upgrade_description .upgrade_btns {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 60px;
+}
+.upgrade_sec .upgrade_description .upgrade_btns button {
+  margin-inline-end: 20px;
+  padding: 8px 30px;
+}
+.upgrade_sec .upgrade_img {
+  width: 30%;
+}
+.upgrade_sec .upgrade_img img {
+  width: 100%;
+  height: 350px;
+}
+
+.footer_sec {
+  background: #E0E0E0;
+  padding: 90px 0 50px 0;
+}
+
+.social_sec .footer_logo a img {
+  width: 105px;
+  height: 25px;
+}
+.social_sec p {
+  color: #4F4F4F;
+  font-size: 20px;
+  padding: 30px 0 10px 0;
+  font-weight: 400;
+}
+.social_sec .slocial_icon ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.social_sec .slocial_icon ul li {
+  margin-inline-end: 10px;
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.f_title h4 {
+  color: #1D1C20;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.f_title ul {
+  padding: 0;
+}
+.f_title ul li {
+  color: #4F4F4F;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.copy-writr {
+  text-align: center;
+  border-top: 1px solid #BDBDBD;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.copy-writr span {
+  color: #4F4F4F;
+  font-size: 14px;
+}
+
+.input_subscrip {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.input_subscrip input {
+  border: unset;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+}
+.input_subscrip button {
+  width: 20%;
+  height: 100%;
+  background: #A3DC2F;
+  padding: 10px;
+  border: unset;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 html[dir=rtl] body {

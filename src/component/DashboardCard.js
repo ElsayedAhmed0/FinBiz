@@ -1,6 +1,7 @@
 import React from "react";
 import SmCard from "./SmCard";
-import VerticalCard from "./VerticalCard"
+import VerticalCard from "./VerticalCard";
+import ChartDB from "./ChartDB";
 import SharedButton from "../sharedComponent/SharedButton"
 import { Button, Card,Row,Col } from "react-bootstrap";
 import img1 from "./graph.svg";
@@ -25,7 +26,7 @@ const DashboardCard = () => {
       <Col>
         <VerticalCard />
       </Col>
-        <Col xs={6}>2 of 3 (wider)</Col>
+        <Col xs={6}> <ChartDB /> </Col>
         <Col>3 of 3</Col>
       </Row>
     </div>

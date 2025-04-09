@@ -185,8 +185,7 @@ button {
     }
     &.text_mail {
         background: $text-color;
-        // border: unset;
-        width: 30%;
+        width: max-content;
         padding: 10px;
         color: $white-color;
         font-weight: 600;
@@ -200,6 +199,13 @@ button {
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
+    }
+    &.btn_demo {
+        background: #A3DC2F;
+        width: max-content;
+        padding: 10px;
+        color: $white-color;
+        font-weight: 600;
     }
     &.btn-font-12 {
         font-size: $main-fontSize-12;
@@ -261,7 +267,7 @@ header {
 
 // ************* end header ********
 .home_page {
-    background: $main-background-color;
+    background: #F2F2F2;
     margin-top: 95px;
 }
 
@@ -487,5 +493,222 @@ header {
                 }
             }
         }
+    }
+    .arrow_btns {
+        @include flex-bar-center;
+        margin: 20px 0;
+        .custom-arrow {
+            width: 50px;
+            height: 50px;
+            background: $white-color;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover {
+                transition: .3s ease-in-out;
+                background: #A3DC2F;
+            }
+        }
+    }
+    .PricingCard_sec {
+        padding: 0 100px;
+    }
+}
+
+// ******************
+.testimonials_sec .col:nth-child(2) .card_price .pr_card__title h3 {
+    color: #729F19;
+}
+
+.card_price {
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+    padding: 25px;
+    height: 700px;
+    position: relative;
+    .sub_text {
+        position: absolute;
+        right: 40px;
+        border: 1px solid #236456;
+        padding: 3px 12px;
+        border-radius: 30px;
+        color: #33C6AB;
+        background: #112220;
+        font-size: $main-fontSize-14;
+        font-weight: 500;
+    }
+    .pr_card__title {
+        h3 {
+            color: $text-color;
+            font-size: $main-fontSize-30;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+    }
+    .pr_card_description {
+        span {
+            color: #333333;
+            font-size: $main-fontSize-16;
+            padding-bottom: 20px;
+            display: block;
+        }
+    }
+    .pr_card_price {
+        margin: 50px 0;
+        span {
+            color: $text-color;
+            font-size: $main-fontSize-36;
+            font-weight: 500;
+            em {
+                color: #4F4F4F;
+                font-size: $main-fontSize-16;
+            }
+        }
+    }
+    .pr_card_feature {
+        text-align: start;
+        margin: 20px 0;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                font-size: $main-fontSize-16;
+                font-weight: 400;
+                color: $text-color;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .pr_card_btn {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        left: 0;
+    }
+}
+
+// *****************************
+.next_sec {
+    background: $main-background-color;
+    padding-bottom: 30px;
+}
+
+.upgrade_card {
+    background: $white-color;
+    padding: 30px 40px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.upgrade_sec {
+    @include flex-bar-between;
+    flex-wrap: wrap;
+    .upgrade_description {
+        width: 60%;
+        h2 {
+            color: $text-color;
+            font-size: 70px;
+        }
+        .upgrade_btns {
+            @include flex-bar-start;
+            margin-top: 60px;
+            button {
+                margin-inline-end: 20px;
+                padding: 8px 30px;
+            }
+        }
+    }
+    .upgrade_img {
+        width: 30%;
+        img {
+            width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+// ************** footer ********
+.footer_sec {
+    background: #E0E0E0;
+    padding: 90px 0 50px 0;
+}
+
+.social_sec {
+    .footer_logo a img {
+        width: 105px;
+        height: 25px;
+    }
+    p {
+        color: #4F4F4F;
+        font-size: 20px;
+        padding: 30px 0 10px 0;
+        font-weight: 400;
+    }
+    .slocial_icon ul {
+        padding: 0;
+        @include flex-bar-start;
+        li {
+            margin-inline-end: 10px;
+            width: 45px;
+            height: 45px;
+            background: $white-color;
+            @include flex-bar-center;
+            border-radius: 50%;
+        }
+    }
+}
+
+.f_title {
+    h4 {
+        color: $text-color;
+        font-size: $main-fontSize-20;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    ul {
+        padding: 0;
+        li {
+            color: #4F4F4F;
+            font-size: $main-fontSize-16;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.copy-writr {
+    text-align: center;
+    border-top: 1px solid #BDBDBD;
+    padding-top: 20px;
+    margin-top: 20px;
+    span {
+        color: #4F4F4F;
+        font-size: $main-fontSize-14;
+    }
+}
+
+.input_subscrip {
+    margin-top: 40px;
+    @include flex-bar-between;
+    background: $white-color;
+    border-radius: 8px;
+    overflow: hidden;
+    input {
+        border: unset;
+        padding: 10px;
+        width: 80%;
+        font-size: $main-fontSize-16;
+    }
+    button {
+        width: 20%;
+        height: 100%;
+        background: #A3DC2F;
+        padding: 10px;
+        border: unset;
+        font-size: $main-fontSize-16;
+        color: $white-color;
     }
 }
