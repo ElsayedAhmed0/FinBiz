@@ -1,14 +1,19 @@
 import React from "react";
 
-const SharedButton = ({ label, variant = "primary", size = "fnt_16",basebtnstyle="basebtn" }) => {
+const SharedButton = ({ label ,variant = "primary", size = "fnt_16",basebtnstyle="basebtn" }) => {
+  console.log("button",variant)
   const baseStyles = {
     basebtn: "primary_1",
   };
+  // const generalstyle = {
+  //   basebtn: "gnr_btn",
+  // };
   const variantStyles = {
     btnstart: "btn_get_start",
     mail_btn: "text_mail",
     trans_btn: "btn_translat",
     demo_btn:"btn_demo",
+    login_btn:"login_btn",
   };
   const sizeStyles = {
    fnt_12:"btn-font-12",
@@ -22,7 +27,7 @@ const SharedButton = ({ label, variant = "primary", size = "fnt_16",basebtnstyle
 
   return (
     <button
-      className={`${baseStyles[basebtnstyle]} ${variantStyles[variant]} ${sizeStyles[size]} relative`}
+      className={`${baseStyles[basebtnstyle]}  ${variantStyles[variant]} ${sizeStyles[size]} relative`}
     >
       <span className="relative">{label}</span>
     </button>

@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 const PricingSec = () => {
   const PriceCardDAta = [
     {
+      id:"1",
       title: "Basic",
       description:
         "Get a professional website designed according to your needs.",
@@ -15,9 +16,10 @@ const PricingSec = () => {
       ],
       label: "Get started",
       actionBtn:"basic",
-      stylett:"text"
+      stylebtn:"btnstart"
     },
     {
+      id:"2",
       title: "Pro",
       description:
         "Get a professional website designed according to your needs.",
@@ -32,9 +34,10 @@ const PricingSec = () => {
       label: "Get started",
       distinct: "Popular",
       actionBtn:"pro",
-      stylett:"texttt"
+      stylebtn:"mail_btn"
     },
     {
+      id:"3",
       title: "Enterprise",
       description:
         "Get a professional website designed according to your needs.",
@@ -47,7 +50,7 @@ const PricingSec = () => {
       ],
       label: "Contact Us",
       actionBtn:"interprice",
-      stylett:"texts"
+      stylebtn:"demo_btn"
     },
   ];
   return (
@@ -65,9 +68,9 @@ const PricingSec = () => {
       </p>
       
       <Row className="mt-2 mb-3 PricingCard_sec">
-        { PriceCardDAta.map((item,index)=>{
+        { PriceCardDAta.map((item)=>{
             return (
-              <Col> <PricingCard key={index} {...item} /></Col>
+              <Col> <PricingCard key={item.id} {...item} /></Col>
           
             )
         })

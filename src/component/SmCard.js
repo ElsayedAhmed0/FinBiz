@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Card } from "react-bootstrap";
 const SmCard = (props) => {
+  console.log("img",props.theimg)
   return (
     <div className='card db-card'>
       <div className='card_head Profit_details'>

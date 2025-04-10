@@ -1,8 +1,8 @@
 import React from "react";
 
 import SharedButton from "../sharedComponent/SharedButton"
-const PricingCard = ({title,description,price,features,distinct,actionBtn,label,stylett}) => {
-  
+const PricingCard = ({title,description,price,features,distinct,actionBtn,label,stylebtn,id}) => {
+  console.log(stylebtn)
   return (
     <div className="card_price">
      
@@ -30,7 +30,8 @@ const PricingCard = ({title,description,price,features,distinct,actionBtn,label,
         </ul>
       </div>
       <div className="pr_card_btn">
-      <SharedButton variant="mail_btn"  label={label} size="fnt_16"/>
+      <SharedButton variant={stylebtn}  label={label} size="fnt_16"/>
+
       {/* {actionBtn === 'pro' && (<SharedButton variant="btn_get_start" label="Get started" size="fnt_16"/>) }
       {actionBtn === 'interprice' && (<SharedButton variant="btn_translat" label="Get started" size="fnt_16"/>) }
       {actionBtn === 'basic' && (<SharedButton variant="mail_btn" label="Get started" size="fnt_16"/>) } */}
