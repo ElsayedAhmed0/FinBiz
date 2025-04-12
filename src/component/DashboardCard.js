@@ -25,7 +25,7 @@ const DashboardCard = () => {
         {cardDetails.length ? (
           cardDetails.map((item, index) => {
             return (
-              <Col>
+              <Col className="mt-2 mb-2">
                 <SmCard
                   title={item.title}
                   price={item.price}
@@ -41,10 +41,10 @@ const DashboardCard = () => {
         )}
       </Row>
       <Row className="mt-3 mb-2">
-        <Col>
+        <Col  className="mt-2 mb-2">
           <VerticalCard />
         </Col>
-        <Col xs={6}>
+        <Col md={6}  className="mt-2 mb-2">
           <div className="bg_chart card db-card vr-card">
             <ChartDB />
           </div>{" "}

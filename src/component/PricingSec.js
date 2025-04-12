@@ -70,7 +70,7 @@ const PricingSec = () => {
       <Row className="mt-2 mb-3 PricingCard_sec">
         { PriceCardDAta.map((item)=>{
             return (
-              <Col> <PricingCard key={item.id} {...item} /></Col>
+              <Col className="mt-2 mb-2"> <PricingCard key={item.id} {...item} /></Col>
           
             )
         })

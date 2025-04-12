@@ -234,15 +234,19 @@ button {
     }
 }
 
+.nave-responsive {
+    display: none;
+}
+
 // ******************************************************************************************************
 header {
     background: $white-color;
     width: 100%;
     position: fixed;
-    padding: 25px 0;
+    padding: 15px 0;
     top: 0;
     z-index: 99;
-    height: 95px;
+    height: 75px;
     .header {
         @include flex-bar-between;
         width: 100%;
@@ -272,7 +276,7 @@ header {
 // ************* end header ********
 .home_page {
     background: #F2F2F2;
-    margin-top: 95px;
+    margin-top: 75px;
 }
 
 .introducing_sec {
@@ -778,4 +782,20 @@ header {
     position: relative;
     z-index: 2;
     padding-top: 60px;
+}
+
+.d_db_card {
+    text-align: center;
+    padding: 10px;
+    height: 460px;
+    p {
+        padding-top: 40px;
+        font-size: $main-fontSize-16;
+        font-weight: 400;
+        color: #333333;
+    }
+    img {
+        height: 320px;
+        width: 100%;
+    }
 }

@@ -691,14 +691,18 @@ button.btn-font-24 {
   font-size: 24px;
 }
 
+.nave-responsive {
+  display: none;
+}
+
 header {
   background: #ffffff;
   width: 100%;
   position: fixed;
-  padding: 25px 0;
+  padding: 15px 0;
   top: 0;
   z-index: 99;
-  height: 95px;
+  height: 75px;
 }
 header .header {
   display: flex;
@@ -729,7 +733,7 @@ header .header .nav_bar ul li button {
 
 .home_page {
   background: #F2F2F2;
-  margin-top: 95px;
+  margin-top: 75px;
 }
 
 .introducing_sec {
@@ -1240,6 +1244,97 @@ header .header .nav_bar ul li button {
   padding-top: 60px;
 }
 
+.d_db_card {
+  text-align: center;
+  padding: 10px;
+  height: 460px;
+}
+.d_db_card p {
+  padding-top: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+.d_db_card img {
+  height: 320px;
+  width: 100%;
+}
+
 html[dir=rtl] body {
   direction: rtl;
+}
+
+@media (max-width: 767px) {
+  .nave-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #FAFAFA;
+    box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+    padding: 10px 15px;
+  }
+  .nave-responsive a img {
+    width: 60px;
+  }
+  .nave-responsive .bar {
+    font-size: 28px;
+  }
+  header .header .logo {
+    display: none;
+  }
+  .header.open {
+    left: 0;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #e6e6e6;
+    z-index: 44;
+    height: 100%;
+    left: -100%;
+    top: 80px;
+    transition: left 0.5s;
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+  .header ul {
+    flex-direction: column;
+  }
+  .header ul li {
+    padding: 7px 0 !important;
+  }
+  .introducing_sec .btn_introducing h3,
+  .introducing_sec .btn_introducing p {
+    width: 100%;
+  }
+  .mail_text,
+  .reviews_sec {
+    width: 100%;
+  }
+  .sm_navbar .layer_img {
+    left: 0;
+    width: 100%;
+  }
+  .testimonials_sec .PricingCard_sec {
+    padding: 0 60px;
+  }
+  .upgrade_sec .upgrade_description .upgrade_btns button {
+    margin-inline-end: 10px;
+    width: 100%;
+  }
+  .upgrade_sec .upgrade_description,
+  .upgrade_sec .upgrade_img {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .upgrade_card {
+    padding: 20px;
+  }
+  .upgrade_sec .upgrade_description h2 {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

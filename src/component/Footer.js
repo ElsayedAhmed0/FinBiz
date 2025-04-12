@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer_sec">
       <div className="container">
         <Row>
-          <Col xs={4}>
+          <Col md={4}>
             <div className="social_sec">
               <div className="footer_logo">
                 <a href="">
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col md={2}>
             <div className="f_title">
               <h4>Company</h4>
               <ul>
@@ -34,7 +34,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col>
+          <Col md={2}>
           <div className="f_title">
               <h4>Help</h4>
               <ul>
@@ -44,7 +44,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col xs={4}>
+          <Col md={4}>
           <div className="f_title">
               <h4>Subscribe to Newsletter</h4>
              <div className="input_subscrip">

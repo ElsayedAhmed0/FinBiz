@@ -1,13 +1,28 @@
-import React from "react";
-import SharedButton from "../sharedComponent/SharedButton"
-import {Dropdown}  from "react-bootstrap";
+import React, { useState } from "react";
+import SharedButton from "../sharedComponent/SharedButton";
+import { Dropdown } from "react-bootstrap";
+import { MdMenu } from "react-icons/md";
 const Header = () => {
+
+const [open, setShow] = useState(false);
   return (
     <header className="main_header">
+      <div class="nave-responsive">
+        <a href="">
+          <img src="img/logo.svg" alt="" />
+        </a>
+        
+        <div class="bar" onClick={() => setShow(!open)}>
+          <MdMenu />
+        </div>
+      </div>
+     
       <div className="container">
-        <div className="header">
+        <div className={open ? "header open" : "header"} id="header_bar">
           <div className="logo">
-            <a href=""><img src="img/logo.svg" alt="" /></a>
+            <a href="">
+              <img src="img/logo.svg" alt="" />
+            </a>
           </div>
           <div className="nav_bar">
             <ul>
@@ -44,7 +59,11 @@ const Header = () => {
           </div>
           <div className="">
             {/* <button>Get started</button> */}
-            <SharedButton variant="btnstart" label="Get started" size="fnt_16"/>
+            <SharedButton
+              variant="btnstart"
+              label="Get started"
+              size="fnt_16"
+            />
           </div>
         </div>
       </div>

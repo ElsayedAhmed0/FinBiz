@@ -5,7 +5,7 @@ const BgChartDB = () => {
   return (
     <div className="nxt_chart">
       <Row>
-        <Col>
+        <Col className="mt-2 mb-2">
           <div className="card db-card vr-card">
             <div className="d_db_card">
               <p>
@@ -16,7 +16,7 @@ const BgChartDB = () => {
             </div>
           </div>
         </Col>
-        <Col xs={5}>
+        <Col md={5} className="mt-2 mb-2">
           <div className="card db-card vr-card">
             <div className="d_db_card">
               <p>

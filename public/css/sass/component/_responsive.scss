@@ -6,6 +6,83 @@
 
 @media (max-width: 990px) {}
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .nave-responsive {
+        @include flex-bar-between;
+        position: sticky;
+        top: 0;
+        background: #FAFAFA;
+        box-shadow: 2px 4px 24px 0px rgba(0, 0, 0, 0.05);
+        z-index: 99;
+        padding: 10px 15px;
+        a {
+            img {
+                width: 60px;
+            }
+        }
+        .bar {
+            font-size: $main-fontSize-28;
+        }
+    }
+    header .header .logo {
+        display: none;
+    }
+    .header.open {
+        left: 0;
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        padding-top: 20px;
+        background-color: #e6e6e6;
+        z-index: 44;
+        height: 100%;
+        left: -100%;
+        top: 80px;
+        transition: left 0.5s;
+        flex-direction: column;
+        padding-bottom: 200px;
+        ul {
+            flex-direction: column;
+            li {
+                padding: 7px 0 !important;
+            }
+        }
+    }
+    .introducing_sec {
+        .btn_introducing {
+            h3,
+            p {
+                width: 100%;
+            }
+        }
+    }
+    .mail_text,
+    .reviews_sec {
+        width: 100%;
+    }
+    .sm_navbar .layer_img {
+        left: 0;
+        width: 100%;
+    }
+    .testimonials_sec .PricingCard_sec {
+        padding: 0 60px;
+    }
+    .upgrade_sec .upgrade_description .upgrade_btns button {
+        margin-inline-end: 10px;
+        width: 100%;
+    }
+    .upgrade_sec .upgrade_description,
+    .upgrade_sec .upgrade_img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .upgrade_card {
+        padding: 20px;
+    }
+    .upgrade_sec .upgrade_description h2 {
+        font-size: 50px;
+    }
+}
 
 @media (max-width:576px) {}

@@ -23,8 +23,21 @@ const Testimonials = () => {
       <div className="swiper_sec">
         <Swiper
           spaceBetween={30}
-          slidesPerView={3}
+          
           modules={[Navigation]}
+          breakpoints={{
+            // 576: {
+            //   // width: 576,
+            //   slidesPerView: 2,
+            // },
+            768: {
+              // width: 768,
+              slidesPerView: 1,
+            },
+            990: {
+              slidesPerView:3
+            }
+          }}
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
